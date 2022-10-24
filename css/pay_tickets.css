@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.container_modal {
+  width: 100%;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > .container_modal {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  margin: 10% auto;
+}
+
+.pay_ticket {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.pay_ticket .header_ticket {
+  background-color: #009688;
+  color: white;
+  font-family: "Segoe UI", Arial, sans-serif;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+
+.pay_ticket .header_ticket h2 {
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.pay_ticket .header_ticket a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  float: top;
+  display: flex;
+  justify-content: right;
+}
+
+.pay_ticket .header_ticket span {
+  padding: 0.3em 0.5em;
+}
+
+.pay_ticket .header_ticket span:hover {
+  color: black;
+  background-color: #ccc;
+  width: max-content;
+  height: 100%;
+}
+
+.pay_ticket .header_ticket i.fa.fa-suitcase {
+  padding-right: 10px;
+}
+
+.pay_ticket .content_pay-ticket {
+  padding-top: 0;
+  background-color: white;
+}
+
+.pay_ticket .form_pay {
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pay_ticket .form_pay input {
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+.pay_ticket .form_pay input::placeholder {
+  font-size: 16px;
+}
+
+.pay_ticket .form_pay input:focus {
+  outline: none;
+  border: 1px solid #757575;
+}
+
+.pay_ticket .form_pay button {
+  padding: 1em;
+  font-size: 16px;
+  color: white;
+  border: none;
+  background-color: #009688;
+  cursor: pointer;
+}
+
+.pay_ticket button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.pay_ticket .footer_ticket {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay_ticket .footer_ticket a {
+    text-decoration: none;
+}
+
+.pay_ticket .footer_ticket .btn_close {
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.829);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 0.5em 1em;
+}
+
+.pay_ticket .footer_ticket .btn_close:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.pay_ticket .footer_ticket p {
+  font-family: "Lato", sans-serif;
+}
+
+.pay_ticket .footer_ticket a {
+  color: #009688;
+}

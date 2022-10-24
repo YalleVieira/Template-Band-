@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Band</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/nav_bar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slide_show.css" />
+    <link rel="stylesheet" href="./css/description.css" />
+    <link rel="stylesheet" href="./css/cards_citys.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pay_tickets.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav_bar">
+        <div class="menu_desktop">
+          <div class="options_desktop">
+            <a class="btn_home" href="#"> Home </a>
+            <a href="#band">Band</a>
+            <a href="#tour">Tour</a>
+            <a href="#contact">Contact</a>
+            <select name="Opções" id="menu_select">
+              <option disabled selected value="">MORE</option>
+              <option value="">Merchandise</option>
+              <option value="">Extras</option>
+              <option value="">Media</option>
+            </select>
+          </div>
+          <a class="search" href="#"><i class="fa fa-search"></i></a>
+        </div>
+
+        <div class="menu_mobile" id="nav_mobile">
+          <div class="nav_mobile">
+            <a class="btn_home" href="#"> Home </a>
+            <a class="hamburguer" id="menu_hamburguer"><i class="fa fa-bars"></i></a>
+          </div>
+          <div class="menu_options active">
+            <a href="#band">Band</a>
+            <a href="#tour">Tour</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Merch</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main_content">
+      <div class="slide_animation" id="slider">
+        <div class="slide_background selected">
+          <img
+            class="background_topo"
+            src="./img/background-la.jpg"
+            alt="Imagem de Los Angeles"
+          />
+          <div class="content_slide">
+            <h3>Los Angeles</h3>
+            <p>We had the best time playing at Venice Beach!</p>
+          </div>
+        </div>
+        <div class="slide_background">
+          <img
+            class="background_topo"
+            src="./img/background-chicago.jpg"
+            alt="Imagem de Chigado"
+          />
+          <div class="content_slide">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+          </div>
+        </div>
+        <div class="slide_background">
+          <img
+            class="background_topo"
+            src="./img/background-ny.jpg"
+            alt="Imagem de Nova Iorque"
+          />
+          <div class="content_slide">
+            <h3>New York</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="band" class="text_content">
+        <h2>The band</h2>
+        <p class="description">We love music</p>
+        <p>
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+
+        <div class="cards_fotografo">
+          <div class="cards card_1">
+            <p>Name</p>
+            <img
+              src="./img/bandmember.jpg"
+              alt="Foto ilustrativa de uma pessoa com uma câmera"
+            />
+          </div>
+          <div class="cards card_2">
+            <p>Name</p>
+            <img
+              src="./img/bandmember.jpg"
+              alt="Foto ilustrativa de uma pessoa com uma câmera"
+            />
+          </div>
+          <div class="cards card_3">
+            <p>Name</p>
+            <img
+              src="./img/bandmember.jpg"
+              alt="Foto ilustrativa de uma pessoa com uma câmera"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="tour" class="options_travel">
+        <div class="content_date">
+          <div class="title_date">
+            <h5>Tour Dates</h5>
+            <p>Remember to book your tickets!</p>
+          </div>
+          <div class="month_disponibility">
+            <p class="p_after">Septemper</p>
+            <p class="p_after">October</p>
+            <p>November <span>3</span></p>
+          </div>
+        </div>
+        <div class="cards_citys">
+          <div class="card_city card_ny">
+            <img src="./img/cards/newyork.jpg" alt="Imagem de Nova Iorque" />
+            <div class="description_card">
+              <h4>New York</h4>
+              <p>Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#abrir_modal">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="card_city card_paris">
+            <img src="./img/cards/paris.jpg" alt="Imagem de Paris" />
+            <div class="description_card">
+              <h4>Paris</h4>
+              <p>Sat 28 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#abrir_modal">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="card_city card_sf">
+            <img src="./img/cards/newyork.jpg" alt="Imagem de São Francisco" />
+            <div class="description_card">
+              <h4>San Francisco</h4>
+              <p>Sun 29 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#abrir_modal">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="container_contact">
+        <h2>Contact</h2>
+        <p>Fan? Drop a note!</p>
+        <div class="data_contact">
+          <div class="icons_contact">
+            <span
+              ><i class="fa fa-map-marker" style="width: 30px"></i>Chicago,
+              US</span
+            >
+            <span
+              ><i class="fa fa-phone" style="width: 30px"></i>Phone: +00
+              151515</span
+            >
+            <span
+              ><i class="fa fa-envelope" style="width: 30px"> </i>Email:
+              mail@mail.com</span
+            >
+          </div>
+          <div class="input_contact">
+            <div class="data_user">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+            </div>
+            <input type="text" placeholder="Message" />
+            <div class="btn_contact"><button>Send</button></div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="figure_maps">
+        <img
+          src="./img/map.jpg"
+          alt="Imagem vertical ilustrativa de uma cidade"
+        />
+      </figure>
+
+      <div class="pay_ticket modal" id="abrir_modal">
+        <div class="container_modal">
+          <div class="header_ticket">
+            <a id="fechar" href="#fechar"><span>x</span></a>
+            <h2><i class="fa fa-suitcase"></i>Tickets</h2>
+          </div>
+
+          <div class="content_pay-ticket">
+            <form class="form_pay">
+              <label for="many"
+                ><i class="fa fa-shopping-cart"></i> Tickets, $15 per
+                person</label
+              >
+              <input type="text" id="many" placeholder="How many?" />
+              <label for="email"><i class="fa fa-user"></i> Send To</label>
+              <input type="text" id="email" placeholder="Enter email" />
+              <button class="btn">PAY <i class="fa fa-check"></i></button>
+            </form>
+            <div class="footer_ticket">
+              <a href="#fechar" class="btn btn_close fechar"
+                >Close <i class="fa fa-remove"></i
+              ></a>
+              <p>Need <a href="#">help?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_icons">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+
+  <script>
+    $(document).ready(function () {
+      $(".hamburguer").click(function () {
+        $(this).toggleClass("active");
+        $(".menu_options").toggleClass("active");
+      });
+    });
+  </script>
+</html>

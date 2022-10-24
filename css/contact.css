@@ -1,0 +1,106 @@
+.container_contact {
+    width: 100%;
+    padding: 50px;
+}
+
+.container_contact h2, .container_contact p {
+    text-align: center;
+    padding: 10px;
+}
+
+.container_contact h2 {
+    font-size: 30px;
+    font-weight: initial;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.container_contact p {
+    font-style: italic;
+    color: #757575;
+    padding-bottom: 30px;
+}
+
+.data_contact {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.data_contact .icons_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data_contact .input_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data_contact .input_contact .data_user {
+    display: flex;
+    gap: 10px;
+} 
+
+.data_contact .input_contact  input{
+    padding: 1em;
+    border: 1px solid #75757563;
+}
+
+.data_contact .input_contact  input::placeholder{
+    font-size: 16px;
+}
+
+.data_contact .input_contact input:active {
+    border: 1px solid #757575;
+}
+
+.data_contact .input_contact .btn_contact {
+    display: flex;
+    justify-content: right;
+}
+
+.data_contact .input_contact button {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    width: max-content;
+    border: none;
+}
+
+.data_contact .input_contact button:hover {
+    background-color: #ccc;
+    color: black;
+    border: initial;
+}
+
+@media (max-width:600px) {
+    .data_contact {
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* .data_contact .input_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    } */
+    .data_contact .input_contact .data_user {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .data_contact .input_contact input {
+        width: 100%;
+    }
+    .data_contact .input_contact input:focus {
+        outline: none;
+        border: 1px solid black;
+    }
+}

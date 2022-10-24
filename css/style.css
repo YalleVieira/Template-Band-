@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.main_content button {
+    cursor: pointer;
+}
+
+.main_content .figure_maps img{
+    width: 100%;
+}

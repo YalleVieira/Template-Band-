@@ -1,0 +1,41 @@
+#slider {
+  width: 100%;
+  height: 50vw;
+  max-height: 600px;
+}
+
+#slider .slide_background {
+  opacity: 0;
+
+  position: absolute;
+  width: 100%;
+  top: 51px;
+
+  transition: opacity 800ms;
+}
+
+#slider .selected {
+  opacity: 1;
+}
+
+#slider img {
+  width: 100%;
+}
+
+.content_slide {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-weight: bold;
+  padding-bottom: 30px;
+  position: relative;
+  bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .content_slide {
+    display: none;
+  }
+}

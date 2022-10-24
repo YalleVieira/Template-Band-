@@ -1,0 +1,27 @@
+footer {
+    color: #757575;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer_icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .footer_icons i{
+    font-size: 25px;
+    align-items: center;
+}
+
+footer .footer_icons i:hover{
+    color: #75757570;
+}
+
+footer  a {
+    color: #757575;
+}
